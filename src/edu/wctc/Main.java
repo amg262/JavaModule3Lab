@@ -1,18 +1,23 @@
 package edu.wctc;
 
+import java.text.DateFormat;
 import java.util.*;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        Triplet name1 = new Triplet("Andrew", "Michael", "Gunn");
-        Triplet name2 = new Triplet(new ArrayList<String>({"Andrew","Goombah"}))
+        Triplet name = new Triplet("Andrew", "Michael", "Gunn");
+        Triplet cube = new Triplet(3, 6, 9);
+        Triplet time = new Triplet("10 hours", "10 minutes", "10 seconds");
 
-        System.out.println(name1);
+        System.out.println(name);
+        System.out.println(cube);
+        System.out.println(time);
 
     }
 
+    /*
     static void cheeseyVenn() {
         // write your code here
         Set<String> carby = new HashSet<>();
@@ -85,6 +90,7 @@ public class Main {
         allThree.retainAll(tomatoey);
         System.out.println(allThree.toString());
     }
+
     static void bookDemo() {
         Set<Book> books = new HashSet<>();
         books.add(new Book("Beyond order", new Author("Jordan", "Peterson")));
@@ -122,4 +128,6 @@ public class Main {
             System.out.println("For your reference, today you with have\nBig Trouble");
         }
     }
+    
+     */
 }
