@@ -5,6 +5,15 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
+
+        Triplet name1 = new Triplet("Andrew", "Michael", "Gunn");
+        Triplet name2 = new Triplet(new ArrayList<String>({"Andrew","Goombah"}))
+
+        System.out.println(name1);
+
+    }
+
+    static void cheeseyVenn() {
         // write your code here
         Set<String> carby = new HashSet<>();
         Set<String> tomatoey = new HashSet<>();
@@ -75,9 +84,7 @@ public class Main {
         allThree.retainAll(carby);
         allThree.retainAll(tomatoey);
         System.out.println(allThree.toString());
-
     }
-
     static void bookDemo() {
         Set<Book> books = new HashSet<>();
         books.add(new Book("Beyond order", new Author("Jordan", "Peterson")));
